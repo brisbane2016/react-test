@@ -9,7 +9,10 @@
     "build": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
+    
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -19,6 +22,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.0",
     "moment": "^2.24.0",
