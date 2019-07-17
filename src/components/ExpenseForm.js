@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/initialize';
-import 'react-dates/lib/css/_datepicker.css';
+
 
 const now = moment();
 console.log(now.format('MMM Do, YYYY'));
@@ -115,7 +115,7 @@ export default class ExpenseForm extends React.Component {
                     />
                     <textarea
                         placeholder="Add a note"
-                        value={this.state.textarea}
+                        value={this.state.note}
                         onChange={this.onTextareaChange}
                     >
                     </textarea>
